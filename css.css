@@ -1,0 +1,291 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#burue {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vw;
+    border:solid 1px black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #1A120B;
+    color: white;
+}
+
+
+/*Transizioa navbar*/
+
+@media screen and (max-width: 700px) {
+#normala{
+    display: none;
+}
+
+}
+@media screen and (min-width: 700px) {
+#txikie{
+    display: none;
+}
+#textue{
+    margin-right: 22%;
+}
+}
+
+/*Navbar*/
+
+/*Dropdown*/
+.dropdown {
+    float: left;
+    position: relative;
+    padding-left: 4%;
+    display: inline-block;
+    width: 5%;
+    padding-top: 4%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10%;
+    z-index: 1;
+    background-color: #9E9FA5;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 2vw;
+    text-decoration: none;
+    display: block;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#Irudie1 {
+    width: 100%;
+}
+
+/*Navbar normal*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A120B;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    font
+}
+
+li {
+    float: left;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    float: none;
+    width: 100px;
+    padding: 25px 20px;
+}
+
+/*zentratzeko*/
+
+#jeje {
+    transform: translate(-50%, -50%);
+    left: 70%;
+    float: none;
+    position: absolute;
+}
+
+#god {
+    transform: translate(-50%, -50%);
+    left: 30%;
+    float: none;
+    position: absolute;
+}
+
+#txapuza {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    float: none;
+    position: absolute;
+}
+
+/*Kontenidoa*/
+
+/*textua*/
+
+#textua{
+    width: 75%;
+    font-size:1vw;
+    /* font minimun size */
+    font-size:calc(1px + 1.1vw);
+    float:left;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*irudie*/
+
+#irudie2 {
+    width: 100%;
+    padding: 2%;
+    float: right;
+}
+
+/*Irudiko komentarioa*/
+.tooltip {
+    position: relative;
+    float: right;    
+    width: 60%;
+    display: inline-block;
+    padding: 2%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 40%;
+    background-color: black;
+    color: #E5E5CB;
+    text-align: center;
+    padding: 5%;
+    border-bottom-right-radius: 25px;
+    margin-top: 1.9%;
+    margin-left: -1.9%;
+    position: absolute;
+    display: inline-block;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*Eskubikoa*/
+
+#eskubikoa {
+    float: right;
+    background-color: #1A120B;
+    width: 15%;
+    margin: 2%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/*eskubiko irudik*/
+#irudixe {
+    width: 50%;
+    margin: 25%;
+}
+
+/*footer*/
+
+/*handie*/
+#ankakoa {
+    float: left;
+    font-size: 1.8vw;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    margin-top: 2%;
+    color: #E5E5CB;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-bottom: 2%;
+}
+
+#ikonoak {
+    margin-bottom: 1%;
+    display: inline-block;
+}
+
+.ikono-euskaldunak {
+    width: 3%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+#linkedin-irudie {
+    width: 3%;
+}
+
+/*txikie*/
+
+#ankakixe {
+    float: left;
+    font-size: 1.8vw;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    margin-top: 2%;
+    color: #E5E5CB;
+    padding-bottom: 5%;
+    display: none;
+}
+
+.ikono-euskaldunak1 {
+    width: 5%;
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+/*Footer transizioa*/
+
+@media screen and (max-width: 700px) {
+    #ankakoa  {
+        display: none;
+    }
+    #ankakixe {
+        display: block;
+    }
+    #burue {
+        border-radius: 0;
+    }
+    #textua {
+        width: 70%;
+    }
+    #eskubikoa {
+        border-radius: 2px ;
+    }
+}
+
+/*Denda*/
+
+#produktuak {
+    margin: auto;
+    margin: auto;
+    width: 50%;
+}
+
+#produktua1 {
+    float: left;
+    margin: 5%;
+    text-align: center;
+}
+
+#irudie3 {
+    width: 20%;
+}
